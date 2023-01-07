@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const commitTemplate = fs.readFileSync('.cz-config.js').toString()
+const commitTemplate = fs.readFileSync('commit.hbs').toString()
 
 module.exports = {
   github: {
