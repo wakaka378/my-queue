@@ -83,5 +83,5 @@ module.exports = {
     confirmCommit: '确定提交说明? yes/no',
   },
   allowCustomScopes: true,
-  allowBreakingChanges: ['feat', 'fix'],
+  subjectLimit: 100,
 }
