@@ -1,7 +1,3 @@
-const fs = require('fs')
-
-const commitTemplate = fs.readFileSync('commit.hbs').toString()
-
 module.exports = {
   github: {
     release: true,
