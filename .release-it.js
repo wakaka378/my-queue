@@ -3,7 +3,7 @@ module.exports = {
     release: true,
   },
   git: {
-    commitMessage: 'release: release v${version}',
+    commitMessage: ':rocket: release: release v${version}',
   },
   npm: {
     publish: true,
