@@ -66,6 +66,6 @@ let inst = new MyClass()
 inst.prop = 123
 // setter: 123
 
-inst.prop
+// inst.prop
 // 'getter'
 // console.log(inst, '---inst')
