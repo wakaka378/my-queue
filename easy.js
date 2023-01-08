@@ -68,4 +68,4 @@ inst.prop = 123
 
 inst.prop
 // 'getter'
-console.log(inst, '---inst')
+// console.log(inst, '---inst')
