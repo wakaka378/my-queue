@@ -3,32 +3,32 @@
 module.exports = {
   types: [
     {
-      value: ':rocket: release',
-      name: '🚀 release: 发布版本/发布标签',
+      value: 'release',
+      name: '🚀  release:  发布版本/发布标签',
     },
     {
-      value: ':construction: WIP',
-      name: '💪 WIP: 正在进行的工作',
+      value: 'WIP',
+      name: '💪  WIP:      正在进行的工作',
     },
     {
-      value: ':sparkles: feat',
-      name: '✨ feat: 新的特性',
+      value: 'feat',
+      name: '✨  feat:     新的特性',
     },
     {
-      value: ':bug: fix',
-      name: '🐛 fix: 修复 Bug',
+      value: 'fix',
+      name: '🐛  fix:      修复Bug',
     },
     {
-      value: ':wrench: CI',
-      name: '🔧 CI: 目录结构变更(CI, Buiding, Tool...)',
+      value: 'CI',
+      name: '🔧  CI:       目录结构变更(CI, Buiding, Tool...)',
     },
 
     {
-      value: ':pencil: docs',
+      value: 'docs',
       name: '📝  docs:     仅文档更改',
     },
     {
-      value: ':twisted_rightwards_arrows: merge',
+      value: 'merge',
       name: '🔀  merge:    合并分支',
     },
     {
@@ -36,36 +36,36 @@ module.exports = {
       name: '⏪  revert:   版本回滚',
     },
     {
-      value: ':white_check_mark: test',
+      value: 'test',
       name: '✅  test:     添加缺失的测试或更正现有测试',
     },
     {
-      value: ':chart_with_upwards_trend: perf',
+      value: 'perf',
       name: '📈  perf:     提高性能的代码更改',
     },
     {
-      value: ':thought_balloon: chore',
+      value: 'chore',
       name: '🗯   chore:    不修改src或测试文件的更改。例如更新构建任务、包管理器',
     },
     {
-      value: ':lipstick: ui',
+      value: 'ui',
       name: '💄  UI:       更新UI和样式文件。',
     },
     {
-      value: ':art: style',
+      value: 'style',
       name: '🎨  style:    不影响代码含义的更改（空白、格式、缺少分号等）',
     },
     {
-      value: ':package: dep_up',
+      value: 'dep_up',
       name: '📦  dep_up:   更新已编译的文件或包。',
     },
 
     {
-      value: ':hammer: refactor',
+      value: 'refactor',
       name: '🔨  refactor: 既不修复错误也不添加功能的代码更改',
     },
     {
-      value: ':truck: mv',
+      value: 'mv',
       name: '🚚  mv:       移动或重命名文件。',
     },
   ],
@@ -83,5 +83,5 @@ module.exports = {
     confirmCommit: '确定提交说明? yes/no',
   },
   allowCustomScopes: true,
-  subjectLimit: 100,
+  allowBreakingChanges: ['feat', 'fix'],
 }
