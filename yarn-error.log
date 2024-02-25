@@ -1,0 +1,79 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /usr/local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/fanliu/.fig/bin:/Users/fanliu/.local/bin:/Users/fanliu/.fef/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.20.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: certificate has expired
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1539:34)
+      at TLSSocket.emit (node:events:513:28)
+      at TLSSocket._finishInit (node:_tls_wrap:953:8)
+      at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:734:12)
+
+npm manifest: 
+  {
+    "name": "my-queue-wakaka",
+    "version": "1.7.4",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "lint": "prettier --write . && eslint --fix .",
+      "prepare": "husky install",
+      "commit": "cz",
+      "release": "release-it"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/wakaka378/my-queue.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/wakaka378/my-queue/issues"
+    },
+    "homepage": "https://github.com/wakaka378/my-queue#readme",
+    "devDependencies": {
+      "@commitlint/cli": "^17.4.0",
+      "@commitlint/config-conventional": "^17.4.0",
+      "@commitlint/cz-commitlint": "^17.4.0",
+      "@release-it/conventional-changelog": "^5.1.1",
+      "@typescript-eslint/eslint-plugin": "^5.48.0",
+      "@typescript-eslint/parser": "^5.48.0",
+      "commitizen": "^4.2.6",
+      "commitlint": "^17.4.0",
+      "commitlint-config-cz": "^0.13.3",
+      "conventional-changelog-writer": "^5.0.1",
+      "cz-customizable": "^7.0.0",
+      "eslint": "^8.31.0",
+      "eslint-config-prettier": "^8.6.0",
+      "eslint-plugin-prettier": "^4.2.1",
+      "husky": "^8.0.3",
+      "inquirer": "8",
+      "prettier": "^2.8.1",
+      "release-it": "^15.6.0",
+      "typescript": "^4.9.4"
+    },
+    "config": {
+      "commitizen": {
+        "path": "node_modules/cz-customizable"
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
